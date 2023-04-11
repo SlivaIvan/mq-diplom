@@ -122,6 +122,8 @@
     text-transform: uppercase;
   }
 
+  /*------------------------------------- Тренды-----------------------------------------*/
+
   .now_in_trend {
     margin-top: 58px;
     position: relative;
@@ -325,7 +327,9 @@
     margin-top: 20px;
   }
   
-  .aside {
+/*----------------------------------------------aside-----------------------------------*/
+
+    .aside {
     max-width: 272px; 
   }
   
@@ -781,7 +785,7 @@
 
 /*----------------------------------------------max-width - 767px-----------------------------------*/
 
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .header {
     background-image: url(../images/banner-mobile.jpg);
   }
@@ -929,92 +933,5 @@
   .product_offers {
     padding: 20px 12px;
   }
-
-}
-
-@media screen (max-width: 767px)  and (orientation: landscape) {
-
-  .header {
-    background-image: url(../images/banner-bg-tablet.jpg);
-  }
-
-  .header_content {
-    max-width: 698px;
-    padding: 29px 0px 146px 0px;
-  }
-
-  .nav_header {
-    display: none;
-  }
-
-  .inrto {
-    max-width: 605px;
-  }
-
-  .title {
-    font-size: 40px;
-  }
-
-  .block_burger {
-    display: block;
-  }
-
-  .btn_burger {
-    width: 23px;
-    height: 3px;
-    border: none;
-    background-color: #ffffff; 
-    display: block;
-    position: relative;
-    cursor: pointer;
-    
-  }
-
-
-  .trend_card {
-    width: calc(50% - 4px);
-    margin-bottom: 3px;
-  }
-
-  .products {
-    margin: 50px auto 50px;
-    max-width: 698px;
-    padding: 0;
-  }
-  
-  .product_offers {
-    max-width: 337px;
-   }
-
-   .news_title_text {
-    font-size: 17px;
-  }
-
-  .main_news {
-    flex-direction: column;
-  }
-
-  .main_news:nth-child(n+2) {
-    border-top: 3px solid #eeeeee;
-    padding-top: 45px;
-    margin-top: 18px;
-   
-  }
-
-  .main_news_content {
-    margin-left: 0px;
-    text-align: left;
-  }
-
-  .product_card {
-    margin-bottom: 28px;
-  }
-
-  .product_card:nth-child(even) {
-    margin-right: 0px;
-    margin-left: 23px;
-  }
-
-}
 
 }
