@@ -1,0 +1,248 @@
+/*?---------------------general style-----------------------*/
+
+body {
+	min-width: 240px;
+}
+
+.content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.trends-section, .posts-section, .aside-bar__section, .shop-section, .site-footer {
+  margin-top: 44px;
+}
+
+.section-title {
+	font-size: 16px;
+}
+
+/*?---------------------header-----------------------*/
+
+.header-section {
+	background-image: url("../images/banner-mobile.jpg");
+}
+
+.header-section__content {
+	padding-top: 31px;
+	padding-bottom: 60.555vw; /* 218/360 = 0.60555 */
+}
+
+@media (max-width: 239px) {
+	.header-section__content {
+		padding-bottom: 145px; /* 0.60555*240 = 145 */
+	}
+}
+
+.header-section__top {
+	height: 70.833vw; /* 255/360 = 0.70833 */
+	flex-direction: column-reverse;
+	align-items: end;
+}
+
+@media (max-width: 239px) {
+	.header-section__top {
+		height: 170px; /* 0.70833*240 = 170 */
+	}
+}
+
+.header-section__logo {
+	width: 74.722vw; /* 269/360 = 0.74722 */
+	height: 16.667vw; /* 60/360 = 0.16667 */
+	margin: 0 auto;
+}
+
+@media (max-width: 239px) {
+	.header-section__logo {
+		width: 179px; /* 0.74722*240 = 179 */
+		height: 40px; /* 0.16667*240 = 40 */
+	}
+}
+
+.menu-one, .menu-two, .menu-three {
+	display: flex;
+}
+
+.menu-one, .menu-two, .menu-three {
+	background-color: #fff;
+	margin-left: 23px;
+	width: 22px;
+	height: 3px;
+	margin-bottom: 5px;
+  }
+
+.header-section__menu-list-container_hidden, .header-section__menu-item-link_hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+	font-size: 0;
+}
+
+.header-section__title-wrapper {
+	margin: 12vw auto 0; /* 43/360 = 0.12 */
+}
+
+@media (max-width: 239px) {
+	.header-section__title-wrapper {
+		margin-top: 29px; /* 0.12*240 = 29 */
+	}
+}
+
+.header-section__title {
+	font-size: 7.222vw; /* 26/360 = 0.07222 */
+	line-height: 1.385; /* 36/26 = 1.385 */
+}
+
+@media (max-width: 239px) {
+	.header-section__title {
+		font-size: 17px; 
+	}
+}
+
+/*?---------------------trends-----------------------*/
+
+.trends-section__articles-item {
+	flex-basis: 100%;
+	margin-bottom: 3px;
+}
+
+@media (orientation: landscape) and (min-width: 600px) {
+	.trends-section__articles-item {
+		flex-basis: calc(50% - 2px); /* (100% - 3)/2 = 50% - 1.5px */
+	}
+}
+
+.trends-section__article {
+	min-height: 231px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.trends-section__article-substance {
+	padding: 30px 22px;
+}
+
+.header-section__article-title {
+	font-size: 16px;
+}
+
+/*?---------------------main posts-----------------------*/
+
+.posts-section__post {
+	margin-bottom: 25px;
+}
+
+.posts-section__post_first {
+	margin-top: 0;
+}
+
+.posts-section__post::before {
+	content: "";
+
+	display: block;
+	width: 100%;
+	height: 3px;
+	margin-bottom: 35px;
+
+	background-color: #eeeeee;
+}
+
+.posts-section__post_first::before {
+	display: none;
+}
+
+.expanded-article__content {
+	margin-top: 16px;
+}
+
+.expanded-article__info {
+	margin-top: 25px;
+	margin-bottom: 23px;
+}
+
+.expanded-article__text-paragraph_not-first {
+	margin-top: 17px;
+}
+
+/*?---------------------aside posts-----------------------*/
+
+@media (max-width: 293px) {
+	.minimized-article__image-wrapper {
+		margin-right: 9px;
+	}
+
+	.minimized-article__title {
+		margin-top: 0;
+	}
+/* } */
+
+/* @media (max-width: 255px) { */
+	.minimized-article__date {
+		font-size: 11px;
+	}
+
+	.minimized-article__title {
+		font-size: 13px;
+	}
+}
+
+/*?---------------------shop-----------------------*/
+
+.shop-section__goods-item {
+	margin-bottom: 25px;
+}
+
+.shop-section__goods-item::after {
+	top: 70vw; /* 70% = 252 / 360 = 0.7 */
+}
+
+.product__title {
+	font-size: 17px;
+	line-height: 1.3;
+}
+
+@media (max-width: 280px) {
+	.shop-section__goods-item::after {
+		top: 196px; /* 0.7 * 280 = 196 */
+	}
+
+	.product__old-price {
+		font-size: 10px;
+	}
+
+	.product__new-price {
+		font-size: 14px;
+	}
+
+	.product__button {
+		width: 100px;
+		height: 35px;
+	}
+
+	.product_button-text {
+		font-size: 10px;
+	}
+}
+
+/*?---------------------footer-----------------------*/
+
+.copyright-section {
+	padding-top: 49px;
+	padding-bottom: 49px;
+}
+
+/*?---------------------feedback-----------------------*/
+
+.feedback-section__window {
+	min-width: 330px;
+	width: calc(100vw - 30px); /* 100% - 2*15 */
+	max-width: 390px;
+	padding: 30px 24px;
+}
+
+.feedback-section__close-button {
+	top: -33px;
+	width: 28px;
+	height: 28px;
+}

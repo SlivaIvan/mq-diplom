@@ -1,0 +1,213 @@
+/*?--------General styles-------*/
+
+.content {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.trends-section, .union, .shop-section, .site-footer {
+	margin-top: 50px;
+}
+
+.aside-bar__section {
+	margin-top: 61px;
+}
+
+.aside-bar__section_first {
+	margin-top: 0;
+}
+
+.section-title {
+	font-size: 20px;
+}
+
+.section-title_aside {
+	font-size: 14px;
+}
+
+.section-title::after {
+	margin-bottom: 28px;
+}
+
+.section-title_aside::after {
+	margin-bottom: 24px;
+}
+
+/*?--------------------header-----------------*/
+
+.header-section {
+	background-image: url("../images/banner-bg.jpg");
+}
+
+.header-section__content {
+	padding-top: 28px;
+	padding-bottom: 145px;
+}
+
+.header-section__logo {
+	width: 180px;
+	height: 40px;
+}
+
+.header-section__menu-list {
+	display: flex;
+}
+
+.header-section__menu-item {
+	margin-left: 35px;
+}
+
+.header-section__menu-item_first {
+	margin-left: 0;
+}
+
+.header-section__menu-item-link {
+	font-weight: normal;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.header-section__menu-item-link:hover {
+	text-decoration: underline;
+}
+
+.header-section__title-wrapper {
+	width: 720px;
+
+	margin: 127px auto 0;
+}
+
+.header-section__title {
+	font-size: 45px;
+	line-height: 1.667;
+}
+
+/*?---------------------trends-------------------*/
+
+.trends-section {
+	max-width: 1660px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.trends-section__articles-item {
+	flex-basis: calc(25% - 3px);
+	margin-bottom: 4px;
+}
+
+.trends-section__article {
+	min-height: 320px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.trends-section__article-substance {
+	padding: 38px 31px 36px;
+}
+
+.trends-section__article-title {
+	font-size: 20px;
+}
+
+/*?------------------------main------------------------*/
+
+.union {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-bar {
+	width: 790px; 
+}
+
+.aside-bar {
+	width: 271px;
+}
+
+/*?----------------aside posts----------------*/
+
+.posts-section__post {
+	margin-top: 59px;
+}
+
+.posts-section__post_first {
+	margin-top: 0;
+}
+
+.expanded-article {
+	display: flex;
+}
+
+.expanded-article__image-wrapper {
+	width: 380px;
+	height: 294px;
+	margin-right: 30px;
+}
+
+.expanded-article__content {
+	width: 380px;
+}
+
+.expanded-article__title {
+	font-size: 20px;
+}
+
+.expanded-article__info {
+	margin-top: 38px;
+}
+
+.expanded-article__text {
+	margin-top: 58px;
+	font-size: 15px;
+	line-height: 1.467;
+}
+
+.expanded-article__text-paragraph_not-first {
+	margin-top: 25px;
+}
+
+/*?---------------------shop-----------------------*/
+
+.shop-section__goods {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.shop-section__goods-item {
+	flex: 0 1 calc(33% - 43px); /* (100% - 2*65)/3 = 33% - 43 */
+}
+
+.shop-section__goods-item::after {
+	top: 173px;
+}
+
+.product__title {
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+/*?---------------------footer-----------------------*/
+.copyright-section {
+	padding-top: 74px;
+	padding-bottom: 46px;
+}
+
+/*?---------------------feedback-----------------------*/
+
+.feedback-section__window {
+	width: 390px;
+	padding: 54px 30px;
+}
+
+.feedback-section__close-button {
+	top: -27px;
+	width: 20px;
+	height: 20px;
+}
