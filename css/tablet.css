@@ -111,7 +111,6 @@
 }
 
 .main-bar {
-	flex: 0 1 392px;
 	margin-right: 35px;
 }
 
@@ -172,7 +171,7 @@
 	top: 24.87vw; /* 191/768 = 0.2487 */
 }
 
-.product__title {
+.title__product {
 	font-size: 17px;
 	line-height: 1.3;
 }

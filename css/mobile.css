@@ -197,7 +197,7 @@ body {
 	top: 70vw; /* 70% = 252 / 360 = 0.7 */
 }
 
-.product__title {
+.title__product {
 	font-size: 17px;
 	line-height: 1.3;
 }
